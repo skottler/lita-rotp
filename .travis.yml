@@ -1,6 +1,7 @@
 branches:
   only:
     - master
+env: CODECLIMATE_REPO_TOKEN=020fdb8a8da6518502f36d94bb21c2ce52da61d3c778cba8d4b35e9328c64502 
 services:
   - redis-server
 language: ruby
