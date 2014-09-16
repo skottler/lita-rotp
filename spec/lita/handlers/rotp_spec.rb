@@ -39,6 +39,12 @@ describe Lita::Handlers::ROTP, lita_handler: true do
     allow(rotph).to receive(:config).and_return(conf)
   end
 
+  describe '.default_config' do
+    it 'should set secret_pairs to an empty Hash' do
+      expect(Lita.config.handlers.rotp.secret_pairs).to eql Hash.new
+    end
+  end
+
   describe '.hotp_generate' do
     context 'when generation succeeds' do
       it 'should return the token template' do
