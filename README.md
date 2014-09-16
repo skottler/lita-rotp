@@ -7,7 +7,16 @@ lita-rotp
 
 Copyright 2014 PagerDuty, Inc.
 
-Lita handler for TOTP & HOTP token generation; uses Ruby One-Time Password (ROTP) library
+Lita handler for TOTP & HOTP token generation; uses Ruby One-Time Password (ROTP) library.
+
+We use plenty of external services that require you to share a login while supporting two-factor authentication. There
+are plenty of tools available to share passwords, but nothing great for sharing/generating TOTP tokens. This handler
+was built so that you can store your shared account secrets in your Lita config and generate two-factor auth tokens
+using Lita.
+
+**NOTE:** The secrets you store in the configuration file should be treated as secret. No others should be able to see
+them. Consider making the read permissions of your Lita configuration file very restrictive (so that only the user
+running Lita should be able to see the contents)
 
 INSTALLATION
 ------------
@@ -21,9 +30,8 @@ gem 'lita-rotp', '~> 0.1'
 LICENSE
 -------
 **lita-rotp** is released under the
-[Apache License 2.0](http://opensource.org/licenses/Apache-2.0).
-The full text of the license can be found in the `LICENSE` file. The summary
-can be found [here](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)) courtesy
+[Apache License 2.0](http://opensource.org/licenses/Apache-2.0). The full text of the license canbe found in the
+`LICENSE` file. The summary can be found [here](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)) courtesy
 of tldrlegal.
 
 CONFIGURATION
