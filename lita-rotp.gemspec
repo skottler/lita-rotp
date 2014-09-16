@@ -20,14 +20,14 @@ require 'lita-rotp/version'
 
 Gem::Specification.new do |s|
   s.name        = 'lita-rotp'
-  s.summary     = 'TOTP / HOTP generator'
+  s.summary     = 'TOTP & HOTP token generator using ROTP'
   s.author      = 'Tim Heckman'
   s.email       = 'tim@pagerduty.com'
   s.license     = 'Apache 2.0'
   s.version     = LitaROTP::VERSION
   s.date        = Time.now.strftime('%Y-%m-%d')
-  s.homepage    = 'https://github.com/PagerDuty/lita-github'
-  s.description = 'Lita handler around Ruby One-Time Password (TOTP & HOTP) library'
+  s.homepage    = 'https://github.com/PagerDuty/lita-rotp'
+  s.description = 'Lita handler for TOTP & HOTP token generation; uses Ruby One-Time Password (ROTP) library'
 
   s.test_files  = `git ls-files spec/*`.split
   s.files       = `git ls-files`.split

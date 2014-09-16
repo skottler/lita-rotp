@@ -3,7 +3,7 @@ FileName:
     - Rakefile
     - Gemfile
     - lib/lita-rotp.rb
-    - lita-github.gemspec
+    - lita-rotp.gemspec
 Metrics/ClassLength:
   Enabled: false
 Style/ClassVars:
