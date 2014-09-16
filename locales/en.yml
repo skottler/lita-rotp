@@ -1,0 +1,7 @@
+en:
+  lita:
+    handlers:
+      rotp:
+        token: "%{t}"
+        not_found: "No secret was found for: %{n}"
+        boom: "I had a problem :( ... %{m}"

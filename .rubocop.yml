@@ -1,0 +1,18 @@
+FileName:
+  Exclude:
+    - Rakefile
+    - Gemfile
+    - lib/lita-rotp.rb
+    - lita-github.gemspec
+Metrics/ClassLength:
+  Enabled: false
+Style/ClassVars:
+  Enabled: false
+Metrics/LineLength:
+  Max: 120
+Metrics/MethodLength:
+  Max: 30
+
+# pending: https://github.com/bbatsov/rubocop/issues/1332
+Style/GuardClause:
+  Enabled: false
